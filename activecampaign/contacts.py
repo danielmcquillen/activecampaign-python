@@ -249,7 +249,6 @@ class Contacts(object):
         raise NotImplementedError
 
     def add_a_tag_to_contact(self, data):
-        # DMcQ: Not sure why these are missing, seem to be pretty straightforward...
         return self.client._post("/contactTags", json=data)
 
     def remove_a_tag_from_a_contact(self):
