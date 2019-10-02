@@ -246,7 +246,7 @@ class Contacts(object):
         raise NotImplementedError
 
     def list_all_custom_field_values(self):
-        raise NotImplementedError
+        return self.client._post("/fields", json=None)
 
     def add_a_tag_to_contact(self, data):
         return self.client._post("/contactTags", json=data)

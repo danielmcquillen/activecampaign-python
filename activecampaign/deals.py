@@ -153,9 +153,6 @@ class Deals(object):
     def delete_a_custom_field(self):
         raise NotImplementedError
 
-    def list_all_custom_fields(self):
-        raise NotImplementedError
-
     def create_a_custom_field_value(self):
         raise NotImplementedError
 
